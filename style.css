@@ -571,8 +571,8 @@ object {
 	margin: 5rem auto 5rem auto;
 	padding: 0 50px;
 	padding: 0 5rem;
-	width: 650px;
-	width: 65rem;
+	width: 600px;
+	width: 60rem;
 }
 
 /* =Branding
@@ -678,8 +678,8 @@ object {
 .onepercent-companies li {
 	float: left;
 	list-style-type: none;
-	margin: 0 24px 0 0;
-	margin: 0 2.4rem 0 0;
+	margin: 0 20px 0 0;
+	margin: 0 2rem 0 0;
 	padding: 0;
 }
 
