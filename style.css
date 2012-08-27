@@ -47,7 +47,7 @@ html {
 	-ms-text-size-adjust: 100%; /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
 }
 body {
-	background: #fff;
+	background: rgb(37,33,35) url('images/texture.png') left top repeat;
 }
 article,
 aside,
@@ -557,3 +557,32 @@ object {
 #searchsubmit {
 	display: none;
 }
+
+/* =Layout
+----------------------------------------------- */
+
+#page {
+	margin: 10px auto 50px auto;
+	margin: 1rem auto 5rem auto;
+	width: 500px;
+	width: 50rem;
+}
+
+/* =Branding
+----------------------------------------------- */
+
+.site-title {
+	font-size: 200px;
+	font-size: 20rem;
+	font-weight: bold;
+	text-align: center;
+}
+
+.site-title a {
+	text-decoration: none;
+}
+
+
+
+
+
