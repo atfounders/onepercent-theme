@@ -8,8 +8,8 @@
  * E.g., it puts together the home page when no home.php file exists.
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package 1% Pledge
- * @since 1% Pledge 1.0
+ * @package One Percent Pledge
+ * @since One Percent Pledge 1.0
  */
 
 get_header(); ?>
@@ -19,7 +19,7 @@ get_header(); ?>
 
 			<?php if ( have_posts() ) : ?>
 
-				<?php 1_pledge_content_nav( 'nav-above' ); ?>
+				<?php one_percent_pledge_content_nav( 'nav-above' ); ?>
 
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
@@ -34,7 +34,7 @@ get_header(); ?>
 
 				<?php endwhile; ?>
 
-				<?php 1_pledge_content_nav( 'nav-below' ); ?>
+				<?php one_percent_pledge_content_nav( 'nav-below' ); ?>
 
 			<?php elseif ( current_user_can( 'edit_posts' ) ) : ?>
 

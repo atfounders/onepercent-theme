@@ -1,7 +1,7 @@
 <?php
 /**
- * @package 1% Pledge
- * @since 1% Pledge 1.0
+ * @package One Percent Pledge
+ * @since One Percent Pledge 1.0
  */
 ?>
 
@@ -10,37 +10,37 @@
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 
 		<div class="entry-meta">
-			<?php 1_pledge_posted_on(); ?>
+			<?php one_percent_pledge_posted_on(); ?>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
 		<?php the_content(); ?>
-		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', '1_pledge' ), 'after' => '</div>' ) ); ?>
+		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'one_percent_pledge' ), 'after' => '</div>' ) ); ?>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-meta">
 		<?php
 			/* translators: used between list items, there is a space after the comma */
-			$category_list = get_the_category_list( __( ', ', '1_pledge' ) );
+			$category_list = get_the_category_list( __( ', ', 'one_percent_pledge' ) );
 
 			/* translators: used between list items, there is a space after the comma */
 			$tag_list = get_the_tag_list( '', ', ' );
 
-			if ( ! 1_pledge_categorized_blog() ) {
+			if ( ! one_percent_pledge_categorized_blog() ) {
 				// This blog only has 1 category so we just need to worry about tags in the meta text
 				if ( '' != $tag_list ) {
-					$meta_text = __( 'This entry was tagged %2$s. Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', '1_pledge' );
+					$meta_text = __( 'This entry was tagged %2$s. Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', 'one_percent_pledge' );
 				} else {
-					$meta_text = __( 'Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', '1_pledge' );
+					$meta_text = __( 'Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', 'one_percent_pledge' );
 				}
 
 			} else {
 				// But this blog has loads of categories so we should probably display them here
 				if ( '' != $tag_list ) {
-					$meta_text = __( 'This entry was posted in %1$s and tagged %2$s. Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', '1_pledge' );
+					$meta_text = __( 'This entry was posted in %1$s and tagged %2$s. Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', 'one_percent_pledge' );
 				} else {
-					$meta_text = __( 'This entry was posted in %1$s. Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', '1_pledge' );
+					$meta_text = __( 'This entry was posted in %1$s. Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', 'one_percent_pledge' );
 				}
 
 			} // end check for categories on this blog
@@ -54,6 +54,6 @@
 			);
 		?>
 
-		<?php edit_post_link( __( 'Edit', '1_pledge' ), '<span class="edit-link">', '</span>' ); ?>
+		<?php edit_post_link( __( 'Edit', 'one_percent_pledge' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-meta -->
 </article><!-- #post-<?php the_ID(); ?> -->

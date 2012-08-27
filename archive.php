@@ -4,8 +4,8 @@
  *
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package 1% Pledge
- * @since 1% Pledge 1.0
+ * @package One Percent Pledge
+ * @since One Percent Pledge 1.0
  */
 
 get_header(); ?>
@@ -19,17 +19,17 @@ get_header(); ?>
 					<h1 class="page-title">
 						<?php
 							if ( is_category() ) {
-								printf( __( 'Category Archives: %s', '1_pledge' ), '<span>' . single_cat_title( '', false ) . '</span>' );
+								printf( __( 'Category Archives: %s', 'one_percent_pledge' ), '<span>' . single_cat_title( '', false ) . '</span>' );
 
 							} elseif ( is_tag() ) {
-								printf( __( 'Tag Archives: %s', '1_pledge' ), '<span>' . single_tag_title( '', false ) . '</span>' );
+								printf( __( 'Tag Archives: %s', 'one_percent_pledge' ), '<span>' . single_tag_title( '', false ) . '</span>' );
 
 							} elseif ( is_author() ) {
 								/* Queue the first post, that way we know
 								 * what author we're dealing with (if that is the case).
 								*/
 								the_post();
-								printf( __( 'Author Archives: %s', '1_pledge' ), '<span class="vcard"><a class="url fn n" href="' . get_author_posts_url( get_the_author_meta( "ID" ) ) . '" title="' . esc_attr( get_the_author() ) . '" rel="me">' . get_the_author() . '</a></span>' );
+								printf( __( 'Author Archives: %s', 'one_percent_pledge' ), '<span class="vcard"><a class="url fn n" href="' . get_author_posts_url( get_the_author_meta( "ID" ) ) . '" title="' . esc_attr( get_the_author() ) . '" rel="me">' . get_the_author() . '</a></span>' );
 								/* Since we called the_post() above, we need to
 								 * rewind the loop back to the beginning that way
 								 * we can run the loop properly, in full.
@@ -37,16 +37,16 @@ get_header(); ?>
 								rewind_posts();
 
 							} elseif ( is_day() ) {
-								printf( __( 'Daily Archives: %s', '1_pledge' ), '<span>' . get_the_date() . '</span>' );
+								printf( __( 'Daily Archives: %s', 'one_percent_pledge' ), '<span>' . get_the_date() . '</span>' );
 
 							} elseif ( is_month() ) {
-								printf( __( 'Monthly Archives: %s', '1_pledge' ), '<span>' . get_the_date( 'F Y' ) . '</span>' );
+								printf( __( 'Monthly Archives: %s', 'one_percent_pledge' ), '<span>' . get_the_date( 'F Y' ) . '</span>' );
 
 							} elseif ( is_year() ) {
-								printf( __( 'Yearly Archives: %s', '1_pledge' ), '<span>' . get_the_date( 'Y' ) . '</span>' );
+								printf( __( 'Yearly Archives: %s', 'one_percent_pledge' ), '<span>' . get_the_date( 'Y' ) . '</span>' );
 
 							} else {
-								_e( 'Archives', '1_pledge' );
+								_e( 'Archives', 'one_percent_pledge' );
 
 							}
 						?>
@@ -69,7 +69,7 @@ get_header(); ?>
 
 				<?php rewind_posts(); ?>
 
-				<?php 1_pledge_content_nav( 'nav-above' ); ?>
+				<?php one_percent_pledge_content_nav( 'nav-above' ); ?>
 
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
@@ -84,7 +84,7 @@ get_header(); ?>
 
 				<?php endwhile; ?>
 
-				<?php 1_pledge_content_nav( 'nav-below' ); ?>
+				<?php one_percent_pledge_content_nav( 'nav-below' ); ?>
 
 			<?php else : ?>
 

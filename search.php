@@ -2,8 +2,8 @@
 /**
  * The template for displaying Search Results pages.
  *
- * @package 1% Pledge
- * @since 1% Pledge 1.0
+ * @package One Percent Pledge
+ * @since One Percent Pledge 1.0
  */
 
 get_header(); ?>
@@ -14,10 +14,10 @@ get_header(); ?>
 			<?php if ( have_posts() ) : ?>
 
 				<header class="page-header">
-					<h1 class="page-title"><?php printf( __( 'Search Results for: %s', '1_pledge' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+					<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'one_percent_pledge' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 				</header><!-- .page-header -->
 
-				<?php 1_pledge_content_nav( 'nav-above' ); ?>
+				<?php one_percent_pledge_content_nav( 'nav-above' ); ?>
 
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
@@ -26,7 +26,7 @@ get_header(); ?>
 
 				<?php endwhile; ?>
 
-				<?php 1_pledge_content_nav( 'nav-below' ); ?>
+				<?php one_percent_pledge_content_nav( 'nav-below' ); ?>
 
 			<?php else : ?>
 

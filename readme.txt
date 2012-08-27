@@ -1,6 +1,6 @@
-=== 1% Pledge ===
+=== One Percent Pledge ===
 
-Hi. I'm a starter theme called 1% Pledge, or underscores, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
+Hi. I'm a starter theme called One Percent Pledge, or underscores, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
 
 My ultra-minimal CSS might make me look like theme tartare but that means less stuff to get in your way when you're designing your awesome theme. Here are some of the other more interesting things you'll find here ...
 
@@ -18,19 +18,19 @@ My ultra-minimal CSS might make me look like theme tartare but that means less s
 
 === Getting Started ===
 
-The first thing you want to do is copy the 1% Pledge directory and change the name to something else. Like, say, megatherium. Then you'll need to do a three-step find and replace on the name in all the templates.
+The first thing you want to do is copy the One Percent Pledge directory and change the name to something else. Like, say, megatherium. Then you'll need to do a three-step find and replace on the name in all the templates.
 
-1. Search for 1% Pledge inside single quotations to capture the text domain.
-2. Search for 1_pledge_ for to capture all the function names
-3. Search for 1% Pledge with a space before it to replace all the occurrences of it in comments. (You'd replace this with the capitalized version of your theme name.)
+1. Search for One Percent Pledge inside single quotations to capture the text domain.
+2. Search for one_percent_pledge_ for to capture all the function names
+3. Search for One Percent Pledge with a space before it to replace all the occurrences of it in comments. (You'd replace this with the capitalized version of your theme name.)
 
 or ...
 
-Search for:'1_pledge'
+Search for:'one_percent_pledge'
 Replace with:'megatherium'
-Search for:1_pledge_
+Search for:one_percent_pledge_
 Replace with:megatherium_
-Search for: 1% Pledge
+Search for: One Percent Pledge
 Replace with: Megatherium
 
 Then, update the stylesheet header in style.css and the links in footer.php with your own information. Next, update or delete this readme.

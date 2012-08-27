@@ -7,8 +7,8 @@
  * and that other 'pages' on your WordPress site will use a
  * different template.
  *
- * @package 1% Pledge
- * @since 1% Pledge 1.0
+ * @package One Percent Pledge
+ * @since One Percent Pledge 1.0
  */
 
 get_header(); ?>

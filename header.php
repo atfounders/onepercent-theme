@@ -4,8 +4,8 @@
  *
  * Displays all of the <head> section and everything up till <div id="main">
  *
- * @package 1% Pledge
- * @since 1% Pledge 1.0
+ * @package One Percent Pledge
+ * @since One Percent Pledge 1.0
  */
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -30,7 +30,7 @@
 
 	// Add a page number if necessary:
 	if ( $paged >= 2 || $page >= 2 )
-		echo ' | ' . sprintf( __( 'Page %s', '1_pledge' ), max( $paged, $page ) );
+		echo ' | ' . sprintf( __( 'Page %s', 'one_percent_pledge' ), max( $paged, $page ) );
 
 	?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
@@ -52,8 +52,8 @@
 		</hgroup>
 
 		<nav role="navigation" class="site-navigation main-navigation">
-			<h1 class="assistive-text"><?php _e( 'Menu', '1_pledge' ); ?></h1>
-			<div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', '1_pledge' ); ?>"><?php _e( 'Skip to content', '1_pledge' ); ?></a></div>
+			<h1 class="assistive-text"><?php _e( 'Menu', 'one_percent_pledge' ); ?></h1>
+			<div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'one_percent_pledge' ); ?>"><?php _e( 'Skip to content', 'one_percent_pledge' ); ?></a></div>
 
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 		</nav><!-- .site-navigation .main-navigation -->

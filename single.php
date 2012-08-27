@@ -2,8 +2,8 @@
 /**
  * The Template for displaying all single posts.
  *
- * @package 1% Pledge
- * @since 1% Pledge 1.0
+ * @package One Percent Pledge
+ * @since One Percent Pledge 1.0
  */
 
 get_header(); ?>
@@ -13,11 +13,11 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php 1_pledge_content_nav( 'nav-above' ); ?>
+				<?php one_percent_pledge_content_nav( 'nav-above' ); ?>
 
 				<?php get_template_part( 'content', 'single' ); ?>
 
-				<?php 1_pledge_content_nav( 'nav-below' ); ?>
+				<?php one_percent_pledge_content_nav( 'nav-below' ); ?>
 
 				<?php
 					// If comments are open or we have at least one comment, load up the comment template
