@@ -46,9 +46,11 @@ html {
 	-webkit-text-size-adjust: 100%; /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
 	-ms-text-size-adjust: 100%; /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
 }
+
 body {
 	background: rgb(37,33,35) url('images/texture.png') left top repeat;
 }
+
 article,
 aside,
 details,
@@ -88,6 +90,7 @@ a:active { /* Improves readability when focused and also mouse hovered in all br
 }
 a img {
 	border: 0;
+	color: #E0E4CC;
 }
 
 
@@ -312,15 +315,15 @@ textarea {
 
 /* Links */
 a {
-	color: royalblue;
+	color: #E0E4CC;
 }
 a:visited {
-	color: purple;
+	color: #E0E4CC;
 }
 a:hover,
 a:focus,
 a:active {
-	color: midnightblue;
+	color: #FA6900;
 }
 
 /* Alignment */
@@ -526,6 +529,9 @@ object {
 /* =Navigation
 ----------------------------------------------- */
 
+.site-navigation {
+	display: none;
+}
 #content .site-navigation {
 	margin: 0 0 1.5em;
 	overflow: hidden;
@@ -562,8 +568,8 @@ object {
 ----------------------------------------------- */
 
 #page {
-	margin: 10px auto 50px auto;
-	margin: 1rem auto 5rem auto;
+	margin: 50px auto 50px auto;
+	margin: 5rem auto 5rem auto;
 	width: 500px;
 	width: 50rem;
 }
@@ -571,18 +577,75 @@ object {
 /* =Branding
 ----------------------------------------------- */
 
+#masthead {
+	color: #E0E4CC;
+}
+
 .site-title {
-	font-size: 200px;
-	font-size: 20rem;
+	font-size: 350px;
+	font-size: 35rem;
 	font-weight: bold;
+	line-height: 280px;
+	line-height: 28rem;
 	text-align: center;
+	text-shadow: 1px 1px 1px #000;
 }
 
 .site-title a {
+	color: #FA6900;
 	text-decoration: none;
 }
 
+#masthead hgroup {
+	/*border: 1px solid #f00;*/
+}
 
+#masthead h2 {
+	font-size: 30px;
+	font-size: 3rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: justify;
+}
+
+#masthead h2 em {
+	color: #FA6900;
+}
+
+/* =Content
+----------------------------------------------- */
+
+#content {
+	color: #E0E4CC;
+}
+
+.entry-header {
+	display: none;
+}
+
+.entry-content {
+	font-size: 20px;
+	font-size: 2rem;
+	text-align: justify;
+}
+
+.entry-content em {
+	color: #FA6900;
+	font-style: normal;
+}
+
+/* =Footer
+----------------------------------------------- */
+
+#colophon {
+	font-family: Georgia, serif;
+	font-style: italic;
+	text-align: center;
+}
+
+#colophon a {
+	text-decoration: none;
+}
 
 
 

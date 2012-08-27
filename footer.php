@@ -15,8 +15,6 @@
 		<div class="site-info">
 			<?php do_action( 'one_percent_pledge_credits' ); ?>
 			<a href="http://wordpress.org/" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', 'one_percent_pledge' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', 'one_percent_pledge' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'one_percent_pledge' ), 'one_percent_pledge', '<a href="http://automattic.com/" rel="designer">Automattic</a>' ); ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon .site-footer -->
 </div><!-- #page .hfeed .site -->
