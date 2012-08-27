@@ -225,7 +225,6 @@ button,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: 1px solid #ccc;
 	border-color: #ccc #ccc #bbb #ccc;
 	border-radius: 3px;
 	background: #fafafa; /* Old browsers */
@@ -236,7 +235,7 @@ input[type="submit"] {
 	background: -ms-linear-gradient(top,  #fafafa 60%,#e6e6e6 100%); /* IE10+ */
 	background: linear-gradient(top,  #fafafa 60%,#e6e6e6 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#e6e6e6',GradientType=0 ); /* IE6-9 */
-	box-shadow: inset 0 2px 1px #fff;
+	/*box-shadow: inset 0 2px 1px #fff;*/
 	color: rgba(0,0,0,.8);
 	cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */
 	-webkit-appearance: button; /* Corrects inability to style clickable 'input' types in iOS */
@@ -712,7 +711,8 @@ h3 {
 }
 
 .gform_footer input.button {
-	color: #FA6900;
+	background: #FA6900 url('images/texture.png');
+	border: 1px solid #000 !important;
 	display: block;
 	font-size: 20px;
 	font-size: 2rem;
@@ -720,7 +720,7 @@ h3 {
 	padding: 15px 0;
 	padding: 1.5rem 0;
 	text-align: center;
-	width: 30%;
+	width: 100%;
 }
 
 .gform_title.trigger:hover {
