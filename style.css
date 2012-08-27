@@ -668,10 +668,110 @@ object {
 	display: block;
 }
 
+/* Company logo display */
+.onepercent-companies {
+	float: left;
+	margin: 0 0 25px 0;
+	margin: 0 0 2.5rem 0;
+	padding: 0;
+}
+
+.onepercent-companies li {
+	float: left;
+	list-style-type: none;
+	margin: 0 24px 0 0;
+	margin: 0 2.4rem 0 0;
+	padding: 0;
+}
+
+.onepercent-companies li.third {
+	margin-right: 0;
+}
+
+h3 {
+	font-size: 25px;
+	font-size: 2.5rem;
+	font-weight: normal;
+	margin: 0 0 10px 0;
+	margin: 0 0 1rem 0;
+}
+
+/* Forms */
+
+.gform_title {
+	background: #FA6900 url('images/texture.png');
+	border: 1px solid #000 !important;
+	display: block;
+	font-size: 20px;
+	font-size: 2rem;
+	font-weight: bold;
+	padding: 15px 0;
+	padding: 1.5rem 0;
+	text-align: center;
+	width: 100%;
+}
+
+.gform_footer input.button {
+	color: #FA6900;
+	display: block;
+	font-size: 20px;
+	font-size: 2rem;
+	font-weight: bold;
+	padding: 15px 0;
+	padding: 1.5rem 0;
+	text-align: center;
+	width: 30%;
+}
+
+.gform_title.trigger:hover {
+	background-color: #666;
+	cursor: pointer;
+}
+
+.gform_wrapper ul {
+	margin: 0;
+	padding: 0;
+}
+
+.gform_wrapper li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 50%;
+}
+
+.gform_wrapper label {
+	font-size: 15px;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.gform_wrapper .gfield_checkbox label {
+	font-weight: normal;
+}
+
+.gform_wrapper .gfield_checkbox input {
+	margin-right: 5px;
+	margin-right: 0.5rem;
+}
+
+.gform_wrapper .gfield {
+	padding: 15px 0;
+	padding: 1.5rem 0;
+}
+
+.gform_wrapper input {
+	padding: 5px;
+	padding: .5rem;
+}
+
+
+
 /* =Footer
 ----------------------------------------------- */
 
 #colophon {
+	clear: both;
 	font-family: Georgia, serif;
 	font-style: italic;
 	text-align: center;
