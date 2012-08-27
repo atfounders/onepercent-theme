@@ -570,15 +570,19 @@ object {
 #page {
 	margin: 50px auto 50px auto;
 	margin: 5rem auto 5rem auto;
-	width: 500px;
-	width: 50rem;
+	width: 600px;
+	width: 60rem;
 }
 
 /* =Branding
 ----------------------------------------------- */
 
 #masthead {
+	background: #000 url('images/texture.png');
 	color: #E0E4CC;
+	margin: 0;
+	padding: 20px 50px 20px 5px;
+	padding: 2rem 5rem 2rem 5rem;
 }
 
 .site-title {
@@ -600,10 +604,15 @@ object {
 	/*border: 1px solid #f00;*/
 }
 
+#masthead h1 {
+	margin: 0;
+}
+
 #masthead h2 {
 	font-size: 30px;
 	font-size: 3rem;
 	font-weight: bold;
+	margin: 0;
 	text-transform: uppercase;
 	text-align: justify;
 }
@@ -626,12 +635,35 @@ object {
 .entry-content {
 	font-size: 20px;
 	font-size: 2rem;
+	position: relative;
 	text-align: justify;
 }
 
 .entry-content em {
 	color: #FA6900;
 	font-style: normal;
+}
+
+.edit-link {
+	display: none;
+	font-size: 10px;
+	font-size: 1rem;
+	left: -50px;
+	left: -3rem;
+	padding: 5px 30px 50px 0;
+	padding: 0.5rem 3rem 5rem 0;
+	position: absolute;
+	text-transform: uppercase;
+	top: 0;
+}
+
+.edit-link a {
+	text-decoration: none;
+}
+
+.entry-content:hover .edit-link,
+.edit-link:hover {
+	display: block;
 }
 
 /* =Footer
