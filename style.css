@@ -700,6 +700,7 @@ h3 {
 .gform_title {
 	background: #FA6900 url('images/texture.png');
 	border: 1px solid #000 !important;
+	color: #000;
 	display: block;
 	font-size: 20px;
 	font-size: 2rem;
@@ -713,6 +714,7 @@ h3 {
 .gform_footer input.button {
 	background: #FA6900 url('images/texture.png');
 	border: 1px solid #000 !important;
+	color: #000;
 	display: block;
 	font-size: 20px;
 	font-size: 2rem;
@@ -723,9 +725,13 @@ h3 {
 	width: 100%;
 }
 
-.gform_title.trigger:hover {
+.trigger .gform_title:hover {
 	background-color: #666;
 	cursor: pointer;
+}
+
+.gform_wrapper {
+	clear: both;
 }
 
 .gform_wrapper ul {
@@ -763,6 +769,18 @@ h3 {
 .gform_wrapper input {
 	padding: 5px;
 	padding: .5rem;
+}
+
+.trigger .gform_body,
+.trigger .gform_footer {
+	display: none;
+}
+
+#gforms_confirmation_message {
+	clear: both;
+	background: #000 url( 'images/texture.png' );
+	padding: 15px;
+	padding: 1.5rem;
 }
 
 

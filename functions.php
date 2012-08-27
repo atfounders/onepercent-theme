@@ -99,6 +99,9 @@ function one_percent_pledge_scripts() {
 
 	wp_enqueue_style( 'style', get_stylesheet_uri() );
 
+	// Add jQuery and scripts for form submission toggle.
+	wp_enqueue_script( 'scripts', get_template_directory_uri() . '/js/scripts.js', array( 'jquery' ), '20120828-01', true );
+
 	wp_enqueue_script( 'small-menu', get_template_directory_uri() . '/js/small-menu.js', array( 'jquery' ), '20120206', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -108,6 +111,7 @@ function one_percent_pledge_scripts() {
 	if ( is_singular() && wp_attachment_is_image( $post->ID ) ) {
 		wp_enqueue_script( 'keyboard-image-navigation', get_template_directory_uri() . '/js/keyboard-image-navigation.js', array( 'jquery' ), '20120202' );
 	}
+	
 }
 add_action( 'wp_enqueue_scripts', 'one_percent_pledge_scripts' );
 
